@@ -1,0 +1,40 @@
+.container {
+	width: 70%;
+	margin: auto;
+	display: grid;
+	grid-template-rows: auto auto auto;
+	grid-template-columns: auto auto 25%;
+}
+
+.order_container {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+.container_container {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: auto auto 25%;
+}
+
+.container h1 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row: 1;
+}
+
+.container .action {
+	grid-column: 3;
+	grid-row: 1;
+}
+
+.order {
+	border: 1px solid black;
+	display: grid;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-template-rows: auto auto auto;
+	grid-template-columns: auto auto auto;
+}
